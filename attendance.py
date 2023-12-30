@@ -30,17 +30,10 @@ class Attendance:
         self.var_atten_date=StringVar()
         self.var_atten_attendance=StringVar()
         
-        # 1st image 
-        # img=Image.open(r"Images\n.jpg")
-        # img=img.resize((680, 130),Image.ANTIALIAS)
-        # self.photoimg=ImageTk.PhotoImage(img)
-
-        # f_lbl=Label(self.root,image=self.photoimg)
-        # f_lbl.place(x=0,y=0,width=700,height=130)
-
+       
         # second image
         img1=Image.open(r"Images\re1.jpg")
-        # img1 = Image.open(r"C:\Users\ACER\Desktop\myProj\Facial-Recognition-Based-Student-Attendance-System\Images\re1.jpg")
+    
         img1=img1.resize((1366, 700),Image.ANTIALIAS)
         self.photoimg1=ImageTk.PhotoImage(img1)
 
@@ -50,7 +43,6 @@ class Attendance:
         
         # background image
         img3 = Image.open(r"Images\collegeLogo.jpeg")
-        # img3 = Image.open(r"C:\Users\ACER\Desktop\myProj\Facial-Recognition-Based-Student-Attendance-System\Images\collegeLogo.jpeg")
         img3=img3.resize((1366, 768),Image.ANTIALIAS)
         self.photoimg3=ImageTk.PhotoImage(img3)
 
@@ -68,7 +60,7 @@ class Attendance:
         Left_frame.place(x=2,y=1,width=660,height=518)
         
         img_left=Image.open(r"Images\re4.jpg")
-        # img_left = Image.open(r"C:\Users\ACER\Desktop\myProj\Facial-Recognition-Based-Student-Attendance-System\Images\re4.jpg")
+     
         img_left=img_left.resize((660, 90),Image.ANTIALIAS)
         self.photoimg_left=ImageTk.PhotoImage(img_left)
 
@@ -78,7 +70,6 @@ class Attendance:
         left_inside_frame=Frame(Left_frame,bd=3,relief=RIDGE,bg="white")
         left_inside_frame.place(x=5,y=100,width=645,height=390)
         
-        # label entry 
         #attendane id
         attendanceId_label=Label(left_inside_frame,text="AttendanceId :",font=("times new roman",12,"bold"),bg="white")
         attendanceId_label.grid(row=0,column=0,padx=2,pady=4,sticky=W)
@@ -137,8 +128,7 @@ class Attendance:
         save_button=Button(btn_frame,text="Import csv",command=self.importCsv,width=17,font=("times new roman",12,"bold"),bg="green",fg="white")
         save_button.grid(row=0,column=0)
 
-        # update_button=Button(btn_frame,text="Export csv ",command=self.exportCsv,width=17,font=("times new roman",12,"bold"),bg="green",fg="white")
-        # update_button.grid(row=0,column=1)
+       
         update_button=Button(btn_frame,text="View Attendance Report ",command=self.viewReport,width=18,font=("times new roman",12,"bold"),bg="green",fg="white")
         update_button.grid(row=0,column=1)
         
@@ -234,24 +224,6 @@ class Attendance:
         except Exception as es:
             
             messagebox.showerror("Error",f"Due To :{str(es)}",parent=self.root)        
-               
-    # # export csv         
-    # def exportCsv(self):    
-    #     try:
-    #         if len(mydata)<1:
-    #             speak_va("No Data Found")
-    #             messagebox.showerror("No Data","No Data Found",parent=self.root)
-    #             return False
-    #         fln=filedialog.asksaveasfile(initialdir=os.getcwd(),title="Open CSV",filetypes=(("CSV File","*.csv"),("ALL File","*.*")),parent=self.root)
-    #         with open(fln,mode="w",newline="") as myfile:
-    #             exp_write=csv.writer(myfile,delimiter=",")
-    #             for i in mydata:
-    #                 exp_write.writerow(i)
-    #             speak_va("Your Data Exported to" + os.path.basename(fln) + " Successfully")
-    #             messagebox.showinfo("Data Export","Your Data has been Exported to"+os.path.basename(fln)+"Successfully")    
-    #     except Exception as es:
-    #             speak_va("Error")
-    #             messagebox.showerror("Error",f"Due to : {str(es)}",parent=self.root)
 
 
 
@@ -295,12 +267,7 @@ class Attendance:
         self.var_atten_time.set("")
         self.var_atten_date.set("")
         self.var_atten_attendance.set("")
-             
-    
-        
-
-        
-       
+                  
         
 if __name__ == "__main__":
     root=Tk()
