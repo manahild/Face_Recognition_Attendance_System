@@ -23,6 +23,7 @@ LBPH OpenCV(Face Recognition)
 
 
 Project Features:
+
 1. Homepage
 
 2.Student Management System
