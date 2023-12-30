@@ -14,11 +14,21 @@ The biggest issue in former attendance management system is the accuracy of the 
 
 
 To do:
+
 Record Student Details in a Database
+
 Train Photo samples of the students
-Algorithms Used
+
+
+
+
+Algorithms Used:
+
 Haarcascade OpenCV(Face Detection)
+
 LBPH OpenCV(Face Recognition)
+
+
 
 
 Project Features:
