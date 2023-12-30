@@ -21,8 +21,9 @@ Haarcascade OpenCV(Face Detection)
 LBPH OpenCV(Face Recognition)
 
 
-
 Project Features:
+
+
 
 1. Homepage
 
