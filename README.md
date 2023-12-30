@@ -24,9 +24,13 @@ LBPH OpenCV(Face Recognition)
 
 Project Features:
 1. Homepage
+
 2.Student Management System
+
 3.Train Photo Samples
+
 4.Take Attendance with Face Detection
+
 5.Exit System
 
 
