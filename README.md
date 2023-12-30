@@ -1,18 +1,21 @@
-Face_Recognition_Attendance_System
-This Face Recognition Attendance System automates attendance tracking using facial recognition technology.
-This Face Recognition Attendance System automates attendance tracking using facial recognition technology.
+Abstract
+Face recognition-based attendance system is a process of recognizing the faces of the students while taking attendance by using face bio-metrics based on high – definition monitor video and other information technology. In this face recognition project, a computer system will be able to find and recognize human faces quickly and precisely in images or videos that are being captured through a webcam / a surveillance camera. In our face recognition project, a computer system will be able to find and recognize human faces quickly and precisely in images or videos that are being captured through a webcam / surveillance camera. Here, faces will recognized using face recognition algorithm. The processed image will then be compared against the existing record and then attendance marked in the database accordingly. The human face is the most distinctive feature used to uniquely identify an individual. That's why, it is used to trace identity as the possibilities for a face to deviate or being duplicated is low.
 
-Prerequisites
-Python 3.x
-OpenCV library                                                                                                                                                                
-                                                                                                                                                                                                              Installation
-Clone the repository: git clone [Your GitHub Repository URL]
-Navigate to the project directory: cd Face_Recognition_Attendance                                                                                                Install required libraries:    OS module in Python                                                                                                                                                                           Numpy as np                                                                                                                                                                                        Tkinter                                                                                                                                                                                                              Python- Text to Speech by using pyttsx3                                                                                                                                                     Running the Project
-To start the system, run: python main.py                                                                                                                                                    Usage
-Ideal for educational institutions and corporate environments for streamlined and accurate attendance tracking.
+Problem Statement
+The biggest issue in former attendance management system is the accuracy of the data collected. This is because the attendance might not be recorded personally by the original person, in other word, the attendance of a particular person can be taken by a third party without the realization of the institution which violates the accuracy of the data.
 
-Contributing
-Contributions to this project are welcome. Please submit pull requests or issues via GitHub.
+To do:
+Record Student Details in a Database
+Train Photo samples of the students
+Algorithms Used
+Haarcascade OpenCV(Face Detection)
+LBPH OpenCV(Face Recognition)
+Project Features
+1. Homepage
+2.Student Management System
+3.Train Photo Samples
+4.Take Attendance with Face Detection
+5.Exit System
 GUI:
 ![image](https://github.com/manahild/Face_Recognition_Attendance_System/assets/120354756/07dd174d-71cc-4fee-a43a-34ed2fc56edd)! 
 ![image](https://github.com/manahild/Face_Recognition_Attendance_System/assets/120354756/f545615d-0c61-48c4-afbf-8cf7c491a648)
